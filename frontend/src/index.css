@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* True deep black for Apple dark mode */
+    @apply bg-[#000000] text-slate-200 transition-colors duration-500 ease-in-out antialiased;
+  }
+  
+  *, ::before, ::after {
+    @apply border-white/10;
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  }
+
+  /* True Apple iOS Liquid Glassmorphism */
+  .glass-panel {
+    @apply bg-[#1c1c1e]/50 backdrop-blur-[24px] backdrop-saturate-[1.8] border border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.4)];
+  }
+
+  /* Hide scrollbar for workflow chart */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Satellite Orbit Animations - Closer to Earth */
+  @keyframes orbit-1 {
+    from { transform: rotate(0deg) translateX(25vw) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(25vw) rotate(-360deg); }
+  }
+  @keyframes orbit-2 {
+    from { transform: rotate(120deg) translateX(32vw) rotate(-120deg); }
+    to   { transform: rotate(480deg) translateX(32vw) rotate(-480deg); }
+  }
+  @keyframes orbit-3 {
+    from { transform: rotate(240deg) translateX(18vw) rotate(-240deg); }
+    to   { transform: rotate(600deg) translateX(18vw) rotate(-600deg); }
+  }
+  
+  .animate-orbit-1 { animation: orbit-1 90s linear infinite; }
+  .animate-orbit-2 { animation: orbit-2 140s linear infinite; }
+  .animate-orbit-3 { animation: orbit-3 110s linear infinite; }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded-full;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400 dark:bg-slate-600;
+  }
+}

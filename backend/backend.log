@@ -1,0 +1,425 @@
+/Users/aditya/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/rm/1f5fc6sj4g71cjdrqpt881lr0000gn/T/matplotlib-ba_iwh_w because there was an issue with the default path ({configdir}); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+INFO:     Started server process [10908]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Model loaded: True on cpu
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: original_demo_sample.tif
+[UPLOAD] content_type: image/tiff
+[UPLOAD] saving to: ./uploads/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original_original_demo_sample.tif
+[UPLOAD] file saved, size: 526155 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=True, type=geotiff
+[UPLOAD] extracting metadata...
+[UPLOAD] metadata extracted: width=256, height=256, bands=4
+[UPLOAD] building response...
+[UPLOAD] === SENDING RESPONSE === job_id=14d2be7a-fb1d-4cc3-b818-e25a76e3d375
+INFO:     127.0.0.1:53693 - "POST /api/upload HTTP/1.1" 200 OK
+[PROCESS] pipeline started in thread for job 14d2be7a-fb1d-4cc3-b818-e25a76e3d375
+INFO:     127.0.0.1:53694 - "POST /api/process HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53697 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53700 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53703 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53707 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53710 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53713 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53716 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53719 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53722 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53725 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53728 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53731 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53734 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53737 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53740 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53743 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53746 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53752 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53758 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53761 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53764 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53767 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53770 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53773 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53776 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53779 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53782 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53785 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53788 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53791 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53794 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53797 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53800 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53806 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53809 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53812 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53815 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53821 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53824 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53827 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53830 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53833 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53836 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53839 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53842 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53845 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53848 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53852 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53855 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53858 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53861 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53864 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53867 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53870 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53873 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53876 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53879 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53882 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53885 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53888 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53891 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53894 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53897 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53900 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53903 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53906 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53909 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53912 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53915 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53918 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53921 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53924 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53927 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53930 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53933 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53936 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53943 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53944 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53945 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53951 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53954 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53961 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53962 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53963 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53966 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53969 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53973 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: demo_sample.tif
+[UPLOAD] content_type: application/octet-stream
+[UPLOAD] saving to: ./uploads/09176bbf-4eed-42ab-9316-d88f16425852/original_demo_sample.tif
+[UPLOAD] file saved, size: 526155 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=True, type=geotiff
+[UPLOAD] extracting metadata...
+[UPLOAD] metadata extracted: width=256, height=256, bands=4
+[UPLOAD] building response...
+[UPLOAD] === SENDING RESPONSE === job_id=09176bbf-4eed-42ab-9316-d88f16425852
+INFO:     127.0.0.1:53974 - "POST /api/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53977 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53980 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53983 - "GET /api/results/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53986 - "GET /api/status/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53989 - "GET /api/results/14d2be7a-fb1d-4cc3-b818-e25a76e3d375 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53992 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53995 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53998 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 200 OK
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: test.png
+[UPLOAD] content_type: image/png
+[UPLOAD] saving to: ./uploads/c9de78d9-29f5-4076-ae97-58d9cc8dea09/original_test.png
+[UPLOAD] file saved, size: 0 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=False, type=standard_image
+[UPLOAD] file invalid: ['File is empty', "Cannot open image: cannot identify image file './uploads/c9de78d9-29f5-4076-ae97-58d9cc8dea09/original_test.png'"]
+INFO:     127.0.0.1:53999 - "POST /api/upload HTTP/1.1" 400 Bad Request
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: valid.jpg
+[UPLOAD] content_type: image/jpeg
+[UPLOAD] saving to: ./uploads/f6ad8c69-482d-4ecd-b727-e58697b82dd0/original_valid.jpg
+[UPLOAD] file saved, size: 823 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=True, type=standard_image
+[UPLOAD] extracting metadata...
+[UPLOAD] metadata extracted: width=100, height=100, bands=3
+[UPLOAD] building response...
+[UPLOAD] === SENDING RESPONSE === job_id=f6ad8c69-482d-4ecd-b727-e58697b82dd0
+INFO:     127.0.0.1:54002 - "POST /api/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54008 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54009 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54024 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54025 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54039 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54040 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54047 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54055 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54056 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54062 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54096 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54097 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54104 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54105 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54115 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54138 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54139 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54153 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54154 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54161 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54162 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54167 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54168 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54169 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54185 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54186 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54189 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54201 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54202 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54213 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54399 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54400 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54401 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54402 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54415 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54416 - "GET /api/health HTTP/1.1" 200 OK
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: demo_sample.tif
+[UPLOAD] content_type: image/tiff
+[UPLOAD] saving to: ./uploads/5872653b-ddc8-46ca-8549-47ac7df9088f/original_demo_sample.tif
+[UPLOAD] file saved, size: 526155 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=True, type=geotiff
+[UPLOAD] extracting metadata...
+[UPLOAD] metadata extracted: width=256, height=256, bands=4
+[UPLOAD] building response...
+[UPLOAD] === SENDING RESPONSE === job_id=5872653b-ddc8-46ca-8549-47ac7df9088f
+INFO:     127.0.0.1:54423 - "POST /api/upload HTTP/1.1" 200 OK
+[PROCESS] pipeline started in thread for job 5872653b-ddc8-46ca-8549-47ac7df9088f
+INFO:     127.0.0.1:54426 - "POST /api/process HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54429 - "GET /api/status/5872653b-ddc8-46ca-8549-47ac7df9088f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54432 - "GET /api/status/5872653b-ddc8-46ca-8549-47ac7df9088f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54435 - "GET /api/status/5872653b-ddc8-46ca-8549-47ac7df9088f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54442 - "GET /api/status/5872653b-ddc8-46ca-8549-47ac7df9088f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54445 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/health HTTP/1.1" 200 OK
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: demo_sample.tif
+[UPLOAD] content_type: image/tiff
+[UPLOAD] saving to: ./uploads/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e/original_demo_sample.tif
+[UPLOAD] file saved, size: 526155 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=True, type=geotiff
+[UPLOAD] extracting metadata...
+[UPLOAD] metadata extracted: width=256, height=256, bands=4
+[UPLOAD] building response...
+[UPLOAD] === SENDING RESPONSE === job_id=dcf53c54-f2c1-41d6-a178-f5d0f7d8046e
+INFO:     127.0.0.1:54457 - "POST /api/upload HTTP/1.1" 200 OK
+[PROCESS] pipeline started in thread for job dcf53c54-f2c1-41d6-a178-f5d0f7d8046e
+INFO:     127.0.0.1:54458 - "POST /api/process HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54459 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54460 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54463 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54466 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54469 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54472 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54475 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54482 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54483 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54484 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54487 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54491 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54495 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54498 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54502 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54505 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54508 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54512 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54518 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54521 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54524 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54527 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54530 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54533 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54536 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54539 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54542 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54545 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54548 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54551 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54554 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54557 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54560 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54563 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54566 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54569 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54572 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54575 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54579 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54582 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54585 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54588 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54591 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54594 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54597 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54600 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54604 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54607 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54610 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54613 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54616 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54619 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54622 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54627 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54630 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54633 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54637 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54641 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54646 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54649 - "GET /api/results/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54652 - "GET /api/status/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54661 - "GET /api/results/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54663 - "GET /api/files/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e/original.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54662 - "GET /api/files/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e/sr_output.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54664 - "GET /api/files/dcf53c54-f2c1-41d6-a178-f5d0f7d8046e/reliability_map.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54694 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54695 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54729 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54730 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54737 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54738 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54741 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54744 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54747 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54769 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54770 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54801 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54802 - "GET /api/health HTTP/1.1" 200 OK
+[UPLOAD] === REQUEST RECEIVED ===
+[UPLOAD] filename: demo_sample.tif
+[UPLOAD] content_type: image/tiff
+[UPLOAD] saving to: ./uploads/ed39e950-af5c-406f-b9ec-48ac36d91d8d/original_demo_sample.tif
+[UPLOAD] file saved, size: 526155 bytes, exists: True
+[UPLOAD] running validation...
+[UPLOAD] validation result: valid=True, type=geotiff
+[UPLOAD] extracting metadata...
+[UPLOAD] metadata extracted: width=256, height=256, bands=4
+[UPLOAD] building response...
+[UPLOAD] === SENDING RESPONSE === job_id=ed39e950-af5c-406f-b9ec-48ac36d91d8d
+INFO:     127.0.0.1:54804 - "POST /api/upload HTTP/1.1" 200 OK
+[PROCESS] pipeline started in thread for job ed39e950-af5c-406f-b9ec-48ac36d91d8d
+INFO:     127.0.0.1:54807 - "POST /api/process HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54810 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54813 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54819 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54822 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54825 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54828 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54831 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54834 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/original.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54837 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54840 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/reliability_map.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54843 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54846 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54849 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54852 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54855 - "GET /api/files/14d2be7a-fb1d-4cc3-b818-e25a76e3d375/sr_output.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54858 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54861 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54864 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54867 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54870 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54873 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54876 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54879 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54882 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54885 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54888 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54891 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54894 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54897 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54900 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54903 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54906 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54909 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54912 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54915 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54918 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54921 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54924 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54928 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54931 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54935 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54938 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54944 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54947 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54953 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54956 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54959 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54962 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54965 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54968 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54971 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54974 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54977 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54980 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54983 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54986 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54989 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54992 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54997 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55002 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55003 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55006 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55009 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55012 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55016 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55019 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55022 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55025 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55028 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55031 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55034 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55041 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55042 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55043 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55046 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55049 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55052 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55055 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55058 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55061 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55064 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55067 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55070 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55073 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55080 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55081 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55082 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55085 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55088 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55091 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55095 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55098 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55101 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55104 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55107 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55110 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55113 - "GET /api/results/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55116 - "GET /api/status/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55122 - "GET /api/results/ed39e950-af5c-406f-b9ec-48ac36d91d8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55121 - "GET /api/files/ed39e950-af5c-406f-b9ec-48ac36d91d8d/sr_output.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55148 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55149 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55162 - "GET /api/files/ed39e950-af5c-406f-b9ec-48ac36d91d8d/original.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55163 - "GET /api/files/ed39e950-af5c-406f-b9ec-48ac36d91d8d/reliability_map.png HTTP/1.1" 200 OK
