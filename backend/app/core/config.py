@@ -1,6 +1,9 @@
 import os
 from pydantic_settings import BaseSettings
 
+_BACKEND_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_ENV_FILE = os.path.join(_BACKEND_DIR, ".env")
+
 class Settings(BaseSettings):
     MODEL_PATH: str = './weights/swinir_classical_sr_x4.pth'
     DATA_DIR: str = './data'
@@ -25,7 +28,7 @@ class Settings(BaseSettings):
     AWS_S3_PRESIGNED_EXPIRY: int = 3600
 
     class Config:
-        env_file = ".env"
+        env_file = (_ENV_FILE, ".env")
         extra = "ignore"
 
 settings = Settings()
