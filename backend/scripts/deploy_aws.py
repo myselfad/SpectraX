@@ -236,7 +236,7 @@ def setup_security_group(ec2):
 
 def generate_user_data(bucket_name: str, region: str) -> str:
     """Generate cloud-init bash script to configure and start the server."""
-    script = f"""#!/bin/bash
+    template = """#!/bin/bash
 set -e
 exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
 
@@ -255,7 +255,54 @@ if [ ! -f /swapfile ]; then
 fi
 
 apt-get update -y
-apt-get install -y nginx git curl build-essential python3 python3-pip python3-venv libgl1-mesa-glx libglib2.0-0
+apt-get install -y nginx git curl build-essential python3 python3-pip python3-venv libgl1 libglx-mesa0 libglib2.0-0
+
+# Immediately start Nginx with a sleek loading page while backend & frontend build
+mkdir -p /var/www/loading
+cat << 'HTMLEOF' > /var/www/loading/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpectraX | Booting Up Cloud Instance</title>
+    <style>
+        body { margin: 0; background: #05080f; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+        .card { background: rgba(28,28,30,0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; padding: 3rem; max-width: 500px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        h1 { font-size: 1.75rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem; }
+        p { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; }
+        .spinner { width: 40px; height: 40px; border: 3px solid rgba(6,182,212,0.2); border-top-color: #06b6d4; border-radius: 50%; animation: spin 1s linear infinite; margin: 1.5rem auto; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .tag { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(6,182,212,0.1); color: #06b6d4; border: 1px solid rgba(6,182,212,0.2); border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+    <script>setTimeout(() => { location.reload(); }, 15000);</script>
+</head>
+<body>
+    <div class="card">
+        <div class="tag">Cloud Instance Active</div>
+        <h1>SpectraX AI Engine</h1>
+        <div class="spinner"></div>
+        <p>Compiling frontend application and initializing PyTorch SwinIR neural weights...</p>
+        <p style="font-size: 0.75rem; color: #64748b; margin-top: 1rem;">This page auto-refreshes every 15 seconds.</p>
+    </div>
+</body>
+</html>
+HTMLEOF
+
+cat << 'NGINXEOF' > /etc/nginx/sites-available/spectrax
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    location / {
+        root /var/www/loading;
+        index index.html;
+    }
+}
+NGINXEOF
+rm -f /etc/nginx/sites-enabled/default
+ln -sf /etc/nginx/sites-available/spectrax /etc/nginx/sites-enabled/spectrax
+systemctl restart nginx
 
 # 2. Install Node.js 20 LTS
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
@@ -281,8 +328,8 @@ DEFAULT_UNCERTAINTY_PASSES=10
 DEFAULT_PATCH_SIZE=48
 DEFAULT_PATCH_OVERLAP=8
 AWS_S3_ENABLED=true
-AWS_S3_BUCKET_NAME={bucket_name}
-AWS_REGION={region}
+AWS_S3_BUCKET_NAME=__BUCKET_NAME__
+AWS_REGION=__REGION__
 AWS_S3_PRESIGNED_EXPIRY=3600
 EOF
 
@@ -321,7 +368,7 @@ systemctl start spectrax-backend
 
 # 8. Configure Nginx
 cat << 'EOF' > /etc/nginx/sites-available/spectrax
-server {{
+server {
     listen 80 default_server;
     listen [::]:80 default_server;
     server_name _;
@@ -329,14 +376,14 @@ server {{
     client_max_body_size 100M;
 
     # Frontend Single Page App
-    location / {{
+    location / {
         root /var/www/spectrax/frontend/dist;
         index index.html;
         try_files $uri $uri/ /index.html;
-    }}
+    }
 
     # Backend API Proxy
-    location /api/ {{
+    location /api/ {
         proxy_pass http://127.0.0.1:8000;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
@@ -344,8 +391,8 @@ server {{
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_read_timeout 300s;
         proxy_connect_timeout 75s;
-    }}
-}}
+    }
+}
 EOF
 
 rm -f /etc/nginx/sites-enabled/default
@@ -355,12 +402,27 @@ systemctl restart nginx
 
 echo "=== SpectraX Cloud Deployment Completed Successfully! ==="
 """
-    return script
+    return template.replace("__BUCKET_NAME__", bucket_name).replace("__REGION__", region)
 
 
 def launch_ec2_instance(ec2, sg_id: str, profile_name: str, bucket_name: str, region: str):
-    """Launch Ubuntu 24.04 t3.medium EC2 instance."""
-    print("\n🚀 Step 4: Launching EC2 Instance (t3.medium in ap-south-1)...")
+    """Launch Ubuntu 24.04 t3.small EC2 instance."""
+    print("\n🚀 Step 4: Launching EC2 Instance (t3.small in ap-south-1)...")
+
+    # Clean up any existing SpectraX instance to prevent duplicate costs
+    existing = ec2.describe_instances(
+        Filters=[
+            {"Name": "tag:Project", "Values": ["SpectraX"]},
+            {"Name": "instance-state-name", "Values": ["running", "pending", "stopped"]},
+        ]
+    )
+    old_ids = [
+        i["InstanceId"] for r in existing["Reservations"] for i in r["Instances"]
+    ]
+    if old_ids:
+        print(f"   🧹 Terminating previous SpectraX instance(s): {old_ids}...")
+        ec2.terminate_instances(InstanceIds=old_ids)
+        time.sleep(5)
 
     # Ubuntu 24.04 LTS AMI in ap-south-1
     ami_id = "ami-0c0fd09cfe77b59dc"
