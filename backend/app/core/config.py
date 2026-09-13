@@ -15,8 +15,18 @@ class Settings(BaseSettings):
     DEFAULT_PATCH_OVERLAP: int = 8
     ALLOWED_EXTENSIONS: list = ['.tif', '.tiff', '.png', '.jpg', '.jpeg']
 
+    # AWS S3 Storage Configuration
+    AWS_ACCESS_KEY_ID: str | None = None
+    AWS_SECRET_ACCESS_KEY: str | None = None
+    AWS_SESSION_TOKEN: str | None = None
+    AWS_REGION: str = 'ap-south-1'
+    AWS_S3_BUCKET_NAME: str = 'spectrax-sih2026-storage'
+    AWS_S3_ENABLED: bool = False
+    AWS_S3_PRESIGNED_EXPIRY: int = 3600
+
     class Config:
         env_file = ".env"
+        extra = "ignore"
 
 settings = Settings()
 

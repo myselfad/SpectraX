@@ -7,6 +7,7 @@ from app.core.config import settings
 from app.schemas.upload import UploadResponse
 from app.preprocessing.validation import validate_file
 from app.preprocessing.metadata import extract_metadata
+from app.services.s3_storage import s3_storage
 
 router = APIRouter()
 
@@ -66,12 +67,27 @@ async def upload_file(file: UploadFile = File(...)):
     
     file_size = os.path.getsize(filepath)
     
+    # Upload to AWS S3 if enabled (non-blocking / graceful fallback)
+    s3_info = {}
+    if s3_storage.is_available():
+        try:
+            s3_info = s3_storage.upload_job_file(
+                job_id=job_id,
+                local_path=filepath,
+                filename=f"original_{file.filename}",
+                category="uploads"
+            )
+            print(f"[UPLOAD] Uploaded raw file to S3: {s3_info.get('s3_uri')}")
+        except Exception as e:
+            print(f"[UPLOAD] Non-fatal S3 upload warning: {e}")
+    
     job_info = {
         'job_id': job_id,
         'filename': file.filename,
         'filepath': filepath,
         'metadata': metadata,
-        'status': 'uploaded'
+        'status': 'uploaded',
+        's3': s3_info
     }
     jobs[job_id] = job_info
     

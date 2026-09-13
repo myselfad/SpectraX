@@ -2,6 +2,7 @@ import os
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse
 from app.core.config import settings
+from app.services.s3_storage import s3_storage
 
 router = APIRouter()
 
@@ -23,6 +24,13 @@ async def export_file(job_id: str, file_type: str):
     filepath = os.path.join(settings.OUTPUT_DIR, job_id, valid_types[file_type])
     
     if not os.path.exists(filepath):
-        raise HTTPException(status_code=404, detail="File not found")
+        # Graceful retrieval from AWS S3 if enabled
+        if s3_storage.is_available():
+            s3_key = f"outputs/{job_id}/{valid_types[file_type]}"
+            downloaded = s3_storage.download_file(s3_key=s3_key, local_path=filepath)
+            if not downloaded:
+                raise HTTPException(status_code=404, detail="File not found locally or in S3")
+        else:
+            raise HTTPException(status_code=404, detail="File not found")
         
     return FileResponse(filepath)

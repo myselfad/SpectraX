@@ -22,6 +22,7 @@ from app.uncertainty.visualization import save_uncertainty_visualization
 from app.validation.consistency import calculate_observation_consistency
 from app.utils.image import save_visualization, create_comparison_image, save_rgb_preview
 from app.utils.io import read_image
+from app.services.s3_storage import s3_storage
 
 
 class PipelineRunner:
@@ -350,6 +351,24 @@ class PipelineRunner:
             json.dump(metrics_report, f, indent=2, default=str)
         export_available.append('metrics_report')
         
+        # Upload generated outputs to AWS S3 if enabled (non-blocking / graceful fallback)
+        s3_outputs = {}
+        if s3_storage.is_available():
+            try:
+                for fname in os.listdir(self.output_dir):
+                    fpath = os.path.join(self.output_dir, fname)
+                    if os.path.isfile(fpath):
+                        upload_meta = s3_storage.upload_job_file(
+                            job_id=self.job_id,
+                            local_path=fpath,
+                            filename=fname,
+                            category="outputs"
+                        )
+                        s3_outputs[fname] = upload_meta
+                print(f"[PIPELINE] Synced {len(s3_outputs)} output artifact(s) to S3 for job {self.job_id}")
+            except Exception as e:
+                print(f"[PIPELINE] Non-fatal S3 outputs upload warning: {e}")
+
         # Store results for API
         self.job_data['uncertainty_result'] = self.uncertainty_result
         self.job_data['results'] = {
@@ -361,4 +380,5 @@ class PipelineRunner:
             'processing_info': processing_info,
             'band_info': band_info,
             'export_available': export_available,
+            's3': s3_outputs,
         }
